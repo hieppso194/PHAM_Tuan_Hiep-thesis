@@ -1,0 +1,37 @@
+\patchcmd{\abstract}{\null\vfil}{}{}{}
+\renewcommand{\abstractname}{\Large Abstract}
+\begin{abstract}
+    Nowadays, the volume of data throughout the world has been exponentially
+    increasing and has become extremely valuable. So it is challenging for us to
+    manage and exploit it. Although many advanced database management systems
+    have been developed to solve this challenge, they still struggle to control
+    large volumes of data. Hence, it is neccessary for us to find solutions to
+    improve the performance of database management systems.
+
+    There are many factors that affect the performance of database management
+    systems, such as: cost model, cardinality estimation, memory configuration,
+    excessive indexing. It is hard to focus on all of these factors to solve the
+    problem. Therefore, identifying the factor that has big impact on the
+    performance of database management systems plays an important role.
+
+    This project focuses on identifying the factor which has big impact and
+    showing its effect by benchmarking it in PostgreSQL and analyzing its
+    effect. Besides, I also propose published solutions to reduce its effect.
+
+    In chapter 2, I introduce the steps that a query is processed. I identify and
+    show the step that affects the query performance the most. And at the end of
+    this chapter, I dig deeper into this step to identify the factor that has
+    big impact on query performance.
+
+    In chapter 3, I identify common benchmarks for query performance in database
+    management systems. And then i research them to find the best benchmarks for
+    cardinality estimation in PostgreSQL\@. 
+    
+    In chapter 4, I benchmark cardinality estimation in PostgreSQL\@. Then I analyze the 			results to show the effect of cardinality estimation to query performance. Finally, I 			will propose some solutions that have been published to reduce its effect and
+    improve the query performance.
+
+    This project is made at HADAS team, LIG Laboratory under the supervision of
+    Dr.\ Christophe Bobineau --- Associate Professor of Grenoble Institute of
+    Technology, Maxence Ahlouche --- PhD student at Grenoble INP and Dr.\ Vu
+    Tuyet Trinh --- SOICT\@.
+\end{abstract}

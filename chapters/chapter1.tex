@@ -1,41 +1,37 @@
 %this is chapter about the process of query execution.
 
-\chapter{INTRODUCTION}\label{chapter:introduction}
+\chapter{Introduction}\label{chapter:introduction}
 
-\section{CONTEXT AND OBJECTIVE OF THE THESIS}
-\subsection{CONTEXT}
-\begin{flushleft}
-{\justify 
-Nowadays, new information sources, such as social networks, mobile devices, sensors, recreationals have been already generated unprecedented volumes of data. These sources are stored in data sets that can reach petabytes or exabytes.
-\par}
-\vspace{0.5cm}
-{\justify 
-According to IBM, 90\% of currently generated information has been created in the last two years. As a consequence of this growth, the term Big Data has been popularized, which is destined to become one of the most promising technology trends in the coming years.
-\par}
-\vspace{0.5cm}
-{\justify 
-More and more companies are realizing that the large amounts of information that they accumulate can play a critical role in the decision making carried out by management teams and the creation of new business. However, this is not an easy task and there are some challenges ahead to achieve it. One of these challenges is the query performance of data management systems on the big datasets.
-\par}
-\vspace{0.5cm}
-{\justify 
-For any production database, Query performance becomes an issue sooner or later. Having long-running queries not only consumes system resources that lead the server and application run slowly, but also may lead to table locking and data corruption issues. So, query optimization becomes an important task.
-\par}
-\vspace{0.5cm}
-{\justify 
-There has been many factors that affect to query optimization and it is hard to focus on all of them to satisfy query optimization aim. Therefore, it is extremely necessary to find the factor that affects query performance the most.
-\par}
-\vspace{0.5cm}
-\subsection{OBJECTIVE OF MY THESIS}
-{\justify 
-In this thesis, I have decided to focus primarily on finding the factor that affects query performance the most and showing its effect to query performance. Besides, I will also propose some published solutions to reduce its effects. There are steps in my thesis:
+\section{Context and objective of the thesis}
+
+\subsection{Context}
+
+Nowadays, new information sources, such as social networks, mobile devices,
+sensors, recreationals generate unprecedented volumes of data. This data is
+stored in datasets that can reach petabytes or exabytes in size. 
+
+It is undoubted that these big volumes of data contain a significant value to our
+life. For example, desision making carried out by management teams and the creation
+of new business can be derived by these large amounts of information. However, to exploit
+these big volumes of data is not an easy task and there are many challenges ahead to achieve their great value. One of these challenges is the query performance of data management systems on big data sets.
+
+Current data management systems have exposed their drawbacks, especially in query performance. When executing the queries with these DBMSs, there are long-running queries, which not only consumes system resources that lead the server and application to run slowly, but may also lead to table locking. So, query optimization becomes an important task.
+
+There are many factors that affect to query optimization and it is hard to focus
+on all of them to improve the query performance. I identified
+that cardinality estimation has a big impact on query performance, and investigate this issue in particular.
+
+\subsection{Objective of my thesis}
+
+In this thesis, I have decided to focus primarily on cardinality estimation and
+showing its effect on query performance.  Besides, I will also propose some
+published solutions to reduce its effects.  There are steps in my thesis:
+
 \begin{itemize}
-\item Understanding how a query is executed.
-\item Finding the factors in query optimization.
-\item Finding the benchmarks to benchmark this factor.
-\item Benchmarking and analyzing the effect of this factor.
-\item Proposing the published solutions to reduce the effect.
+    \item Understanding how a query is executed.
+    \item Identifying the factors in query optimization.
+    \item Finding the best benchmarks for cardinality estimation.
+    \item Benchmarking and analyzing the effect of cardinality estimation on
+        query performance;
+    \item Proposing published solutions.
 \end{itemize}
-\par}
-\vspace{0.5cm}
-
-\end{flushleft}

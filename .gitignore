@@ -1,0 +1,9 @@
+# ignore latex temporary files
+*.aux
+*.lof
+*.log
+*.lot
+*.toc
+*.tdo
+*.*.gz
+

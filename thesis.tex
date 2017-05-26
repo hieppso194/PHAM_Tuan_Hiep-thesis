@@ -1,23 +1,50 @@
-\documentclass[fontsize=12pt,paper=a4]{report}
-\renewcommand{\baselinestretch}{1.2}
-\input{settings}
-%set thesis_plan information
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[tmargin=20mm,bmargin=20mm,lmargin=35mm,rmargin=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{etoolbox}
+
+% todo notes on the left side
+\reversemarginpar{}
+% larger todo notes
+\setlength{\marginparwidth}{3cm}
+
+% no alinea at the beginning of paragraphs
+\setlength{\parindent}{0pt}
+% bigger paragraph spacing
+\setlength{\parskip}{1em}
+
+\graphicspath{ {images/} }
+\renewcommand{\contentsname}{\centering Table of contents}
+\renewcommand{\listfigurename}{\centering List of figures}
+\renewcommand{\listtablename}{\centering List of tables}
 
 \begin{document}
 
+\listoftodos{}
+
 \input{pages/title}
 \input{pages/requirements}
-\newpage\input{pages/abstraction}
-\newpage\input{pages/acknowledgement}
-\newpage\input{pages/tableofcontents}
-\newpage\input{pages/figures}
-%add chapters here.
+\input{pages/abstract}
+\input{pages/acknowledgements}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
 \input{chapters/chapter1}
 \input{chapters/chapter2}
 \input{chapters/chapter3}
 \input{chapters/chapter4}
 \input{chapters/chapter5}
-%add references
 \newpage\input{pages/references}
-%\newpage\input{pages/feedbacks}
+
 \end{document}
